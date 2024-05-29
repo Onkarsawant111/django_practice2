@@ -1,0 +1,162 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-image: url(contactmebg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.ccontainer1 {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    font-family: merriweather;
+}
+
+.cbox1 {
+    margin: 0%;
+    width: 100%;
+    /* border: 1px solid rgb(255, 255, 255); */
+    text-align: right;
+}
+
+@media only screen and (max-width:800px) {
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+li {
+    margin: 0%;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 7%;
+    margin-top: 1%;
+    padding: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: aqua;
+    border: solid 1px rgb(135, 255, 135);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px blue;
+    background-color: black;
+}
+
+li a {
+    text-decoration: none;
+    color: aqua;
+}
+
+@media only screen and (max-width:800px) {
+    li {
+        display: block;
+    }
+}
+
+li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.ccontainer2 {
+    /* border: 1px solid aqua; */
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    /* border: 1px solid red; */
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    background-color: rgba(237, 247, 255, 0.651);
+}
+
+@media only screen and (max-width:800px) {
+    table {
+        width: 200px;
+    }
+}
+
+td {
+    margin: 0%;
+    padding: 0%;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.button1 {
+    width: 100%;
+    height: 35px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(8, 204, 8);
+}
+
+.button2 {
+    width: 100%;
+    height: 35px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(204, 8, 8);
+}
+
+.ccontainer3 {
+    /* border: 1px solid red; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cbox2 {
+    border: 1px solid black;
+    height: 60px;
+    width: 60px;
+    background-color: rgb(255, 255, 255);
+    margin: 1%;
+    border-radius: 10px;
+}
+.cbox3 {
+    border: 1px solid black;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.cbox2 img {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+}
+.cbox3 img {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+}

@@ -1,0 +1,167 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-image: url(servicesbackground.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.scontainer {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    font-family: merriweather;
+
+}
+
+.sbox1 {
+    margin: 0%;
+    width: 100%;
+    /* border: 1px solid rgb(255, 255, 255); */
+    text-align: right;
+}
+
+@media only screen and (max-width:800px) {
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+li {
+    margin: 0%;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 7%;
+    margin-top: 1%;
+    padding: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: aqua;
+    border: solid 1px rgb(135, 255, 135);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px blue;
+    background-color: black;
+}
+
+li a {
+    text-decoration: none;
+    color: aqua;
+}
+
+@media only screen and (max-width:800px) {
+    li {
+        display: block;
+    }
+}
+
+li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.scontainer2 {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:800px) {
+    .scontainer2 {
+        display: block;
+    }
+}
+.sbox2 {
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid white; */
+    margin: 2%;
+    background-image: url(serviceslogo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+@media only screen and (max-width:800px) {
+    .sbox2 {
+        display: inline;
+    }
+}
+
+.sbox3 {
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid white; */
+    margin: 2%;
+    background-color: white;
+    background-image: url(serviceslogo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+@media only screen and (max-width:800px) {
+    .sbox3 {
+        display: inline;
+    }
+}
+
+.sbox4 {
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid white; */
+    margin: 2%;
+    background-color: white;
+    background-image: url(serviceslogo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+@media only screen and (max-width:800px) {
+    .sbox4 {
+        display: inline;
+    }
+}
+
+.sbox5 {
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid white; */
+    margin: 2%;
+    background-color: white;
+    background-image: url(serviceslogo4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+@media only screen and (max-width:800px) {
+    .sbox5 {
+        display: inline;
+    }
+}
+
+h4 {
+    margin: 0%;
+    padding: 0%;
+    height: 10%;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}

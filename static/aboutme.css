@@ -1,0 +1,95 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+video {
+    position: fixed;
+    z-index: -1;
+    height: auto;
+    width: auto;
+    top: 0%;
+    left: 0%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.acontainer {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-family: merriweather;
+}
+
+.abox1 {
+    margin: 0%;
+    width: 100%;
+    /* border: 1px solid rgb(255, 255, 255); */
+    text-align: right;
+}
+
+@media only screen and (max-width:800px) {
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+li {
+    margin: 0%;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 7%;
+    margin-top: 1%;
+    padding: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: aqua;
+    border: solid 1px rgb(135, 255, 135);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px blue;
+}
+
+li a{
+    text-decoration: none;
+    color: aqua;
+}
+
+@media only screen and (max-width:800px) {
+    li {
+        display: block;
+    }
+}
+
+li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.abox2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+p{
+    margin: 1%;
+}
+.innerbox{
+    height: 560px;
+    width: 100%;
+    margin: 2%;
+    border: 1px solid gold;
+    border-radius: 10px;
+}
