@@ -1,9 +1,13 @@
+<head>
+    <link rel="stylesheet" href="/static/header.css">
+</head>
 <nav>
     <ul>
-        <li><a href="/" >Home</a></li>
-        <li><a href="/aboutme" target="_parent">About Me</a></li>
-        <li><a href="/services"   target="_parent">Services</a></li>
-        <li><a href="/contactme"     target="_parent">Contact Me</a></li>
+        <li class="{% if request.path == '/' %} active {% endif %}"><a href="/">Home</a></li>
+        <li class="{% if request.path == '/about-me/' %} active {% endif %}"><a href="{% url 'aboutme' %}" target="_parent">About Me</a></li>
+        <li class="{% if request.path == '/services/' %} active {% endif %}"><a href="{% url 'services' %}" target="_parent">Services</a></li>
+        {% url 'contactme' as i %}
+        <li class="{% if request.path == i %} active {% endif %}"><a href="{% url 'contactme' %}" target="_parent">Contact Me</a></li>  
     </ul>
 </nav>
 </div>
