@@ -1,3 +1,5 @@
+{% extends 'main.html' %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="static/contactme.css">
+    <link rel="stylesheet" href="/static/contactme.css" >
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -14,14 +16,6 @@
 <body>
     <div class="ccontainer1">
         <div class="cbox1">
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="aboutme.html" target="_parent">About Me</a></li>
-                    <li><a href="services.html" target="_parent">Services</a></li>
-                    <li><a href="">Contact Me</a></li>
-                </ul>
-            </nav>
         </div>
         <div class="ccontainer2">
             <form action="">
@@ -50,10 +44,12 @@
         <div class="ccontainer3">
             <div class="cbox2"><a
                     href="https://www.linkedin.com/in/onkar-sawant-46620a216?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6btELh7XQvmLRO4terCvyw%3D%3D"
-                    target="_blank"><img src="static/clogo1.webp" alt="NA"></a></div>
-            <div class="cbox3"><a href="https://github.com/Onkarsawant111" target="_blank"><img src="static/clogo2.png" alt="NA"></a></div>
+                    target="_blank"><img src="/static/clogo1.webp" alt="NA"></a></div>
+            <div class="cbox3"><a href="https://github.com/Onkarsawant111" target="_blank"><img src="/static/clogo2.png"
+                        alt="NA"></a></div>
         </div>
     </div>
 </body>
 
 </html>
+{% endblock content %}
