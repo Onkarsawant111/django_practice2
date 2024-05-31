@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 def home(request):
@@ -9,14 +10,24 @@ def contactme(request):
     return render(request,"contactme.html")
 def services(request):
     return render(request,"services.html")
-
+def thankyou(request):
+    # if request.method == "GET":
+    #     v = request.GET.get("")
+    return render(request,"thankyou.html")
 
 def form(request):
     final_value = 0
+    data = {}
     try:
-        value1 = int(request.GET.get('Num1'))
-        value2 = int(request.GET.get('Num2'))
+        if request.method == "POST":
+            value1 = int(request.POST.get('Num1'))
+            value2 = int(request.POST.get('Num2'))
         final_value = value1 + value2
+        data = {'v1':value1,'v2':value2, 'content':final_value}
+        
+        url = "/thankyou/?content={}".format(final_value)
+        return HttpResponseRedirect(url)
+    
     except:
         pass
-    return render(request,"form.html",{'content':final_value})
+    return render(request,"form.html",data)
