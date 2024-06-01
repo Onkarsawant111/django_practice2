@@ -7,5 +7,6 @@ urlpatterns = [
     path("services/",views.services, name="services"),
     path("contact-me/", views.contactme, name="contactme"),
     path("form/", views.form, name='form'),
-    path("thankyou/", views.thankyou, name='thankyou')
+    path("thankyou/", views.thankyou, name='thankyou'),
+    path("submit/", views.submit, name='submit')
 ]
