@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
+# from .dform import userform
 
 # Create your views here.
 def home(request):
@@ -49,3 +50,6 @@ def submit(request):
     except:
         pass
     return render(request,"form.html",data) 
+
+
+
