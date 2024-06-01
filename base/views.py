@@ -11,9 +11,14 @@ def contactme(request):
 def services(request):
     return render(request,"services.html")
 def thankyou(request):
-    # if request.method == "GET":
-    #     v = request.GET.get("")
-    return render(request,"thankyou.html")
+    value = {}
+    try:
+        if request.method == "GET":
+            data = request.GET.get("output")
+    except:
+        pass
+    value = {'d':data}
+    return render(request,"thankyou.html", value)
 
 def form(request):
     final_value = 0
@@ -24,8 +29,8 @@ def form(request):
             value2 = int(request.POST.get('Num2'))
         final_value = value1 + value2
         data = {'v1':value1,'v2':value2, 'content':final_value}
-        
-        url = "/thankyou/?content={}".format(final_value)
+
+        url = f"/thankyou/?output={final_value}"
         return HttpResponseRedirect(url)
     
     except:
