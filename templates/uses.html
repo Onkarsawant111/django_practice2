@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
+  <title>Uses Home Page</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
@@ -37,7 +37,7 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="pictures">Pictures</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Services</a>
@@ -59,19 +59,12 @@
 
   <section class="container">
     <div class="row">
+      {% for i in uses %}
       <div class="col-md-4">
-        <h2>Section Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut mattis libero.</p>
-      </div>
-      <div class="col-md-4">
-        <h2>Section Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut mattis libero.</p>
-      </div>
-      <div class="col-md-4">
-        <h2>Section Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut mattis libero.</p>
-      </div>
-    </div>
+        <h2>{{i.uses_title}}</h2>
+        <p>{{i.uses_des | safe }}</p>
+        </div>
+      {% endfor %}
   </section>
 
   <footer class="footer bg-dark text-white text-center py-2">
