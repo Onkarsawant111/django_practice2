@@ -52,4 +52,3 @@ def submit(request):
     return render(request,"form.html",data) 
 
 
-
