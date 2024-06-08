@@ -4,6 +4,12 @@ from features.models import Uses
 # Create your views here.
 def uses(request):
     data = Uses.objects.all()
+    if request.method == "GET":
+        search = request.GET.get("search")
+        if search != None:
+            data = Uses.objects.filter(uses_title__icontains = search) or Uses.objects.filter(uses_des__icontains = search)
+        
+                
     content = {
         'uses':data
     }

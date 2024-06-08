@@ -56,14 +56,19 @@
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>
   </header>
-
+  
   <section class="container">
+    <form action="" method="get">
+      <input type="text" placeholder="search" name="search">
+      <input type="submit">
+    </form>
     <div class="row">
       {% for i in uses %}
       <div class="col-md-4">
         <h2>{{i.uses_title}}</h2>
         <p>{{i.uses_des | safe }}</p>
         </div>
+       
       {% endfor %}
   </section>
 
