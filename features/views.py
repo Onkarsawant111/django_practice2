@@ -13,11 +13,16 @@ def uses(request):
     pagi = Paginator(data, 2)
     page_num = request.GET.get('page')
     pagi_data = pagi.get_page(page_num)
+    totalpages = pagi_data.paginator.num_pages      
         
     content = { 
-        'uses':pagi_data
+        'uses':pagi_data,
+        'page_number':[i+1 for i in range(totalpages)]
     }
     return render(request, 'uses.html', content)
+
+def formdata(request):
+    return render(request, 'formdata.html')
 
 def pictures(request):
     return render(request, 'pictures.html')
