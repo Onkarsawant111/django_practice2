@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from features.models import Uses
 from django.core.paginator import Paginator
+from features.models import Formdata
 
 # Create your views here.
 def uses(request):
@@ -21,8 +22,17 @@ def uses(request):
     }
     return render(request, 'uses.html', content)
 
-def formdata(request):
-    return render(request, 'formdata.html')
-
 def pictures(request):
     return render(request, 'pictures.html')
+
+def formdata(request):
+    submit = {}
+    if request.method == "POST":
+        name = request.POST.get('Name')
+        email = request.POST.get('Email')
+        password = request.POST.get('Password')
+        data = Formdata(name=name,email=email,password=password)
+        data.save()
+        mssge = "data submitted"
+        submit = {'mssge':mssge}
+    return render(request, 'formdata.html', submit)
