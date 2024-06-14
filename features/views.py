@@ -36,13 +36,13 @@ def formdata(request):
         mssge = "data submitted"
         submit = {'mssge':mssge}
     
-        send_mail(
-            "testing mail",
-            "Here is the message.",
-            "76b2c1001@smtp-brevo.com",
-            ["onkarsawant111@gmail.com"],
-            fail_silently=False,
-        )
+        # send_mail(
+        #     "testing mail",
+        #     "Here is the message.",
+        #     "76b2c1001@smtp-brevo.com",
+        #     ["onkarsawant111@gmail.com"],
+        #     fail_silently=False,
+        # )
 
     return render(request, 'formdata.html', submit)
 

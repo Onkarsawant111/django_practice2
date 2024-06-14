@@ -131,8 +131,10 @@ MEDIA_ROOT = BASE_DIR / "media"
 MEDIA_URL = "/media/"
 
 # not working
-# EMAIL_HOST =  'smtp-relay.brevo.com'  
-# EMAIL_HOST_USER = "76b2c1002@smtp-brevo.com"
-# EMAIL_HOST_PASSWORD = "2OpD8GLkKdRUqJTg"
-# EMAIL_PORT =  587
-# EMAIL_USE_TLS =  True
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp-relay.brevo.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = '76b2c1002@smtp-brevo.com'
+# EMAIL_HOST_PASSWORD = '2OpD8GLkKdRUqJTg' 
+
