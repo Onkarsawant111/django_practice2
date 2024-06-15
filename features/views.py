@@ -2,8 +2,9 @@ from django.shortcuts import render
 from features.models import Uses
 from django.core.paginator import Paginator
 from features.models import Formdata
-# not workin
-# from django.core.mail import send_mail
+# brevo sending mail :
+from django.core.mail import send_mail
+from django.conf import settings
 
 # Create your views here.
 def uses(request):
@@ -36,14 +37,13 @@ def formdata(request):
         mssge = "data submitted"
         submit = {'mssge':mssge}
     
-        # send_mail(
-        #     "testing mail",
-        #     "Here is the message.",
-        #     "76b2c1001@smtp-brevo.com",
-        #     ["onkarsawant111@gmail.com"],
-        #     fail_silently=False,
-        # )
-
+        send_mail(
+            "tsting mai onkar sawant",
+            "Here is the message.",
+            settings.EMAIL_HOST_USER,
+            ["onkarsawant111@gmail.com"],
+            fail_silently=False,
+        )
     return render(request, 'formdata.html', submit)
 
 

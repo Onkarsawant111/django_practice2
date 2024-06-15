@@ -130,11 +130,20 @@ STATICFILES_DIRS =[
 MEDIA_ROOT = BASE_DIR / "media"
 MEDIA_URL = "/media/"
 
-# not working
+# brevo sending mail
+# SECURE_CROSS_ORIGIN_OPENER_POLICY = "same-origin-allow-popups"
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_HOST = 'smtp-relay.brevo.com'
-# EMAIL_PORT = 587
 # EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = '76b2c1002@smtp-brevo.com'
-# EMAIL_HOST_PASSWORD = '2OpD8GLkKdRUqJTg' 
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = "73eb7d001@smtp-brevo.com"
+# EMAIL_HOST_PASSWORD = "ZXnWjBLtakKA4PJ5"
 
+
+SECURE_CROSS_ORIGIN_OPENER_POLICY = "same-origin-allow-popups"
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp-relay.brevo.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "76b2c1004@smtp-brevo.com"
+EMAIL_HOST_PASSWORD = "3cqbMJxLg9sX1ht8"
