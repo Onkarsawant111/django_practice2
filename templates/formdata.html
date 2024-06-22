@@ -35,6 +35,12 @@
         </div>
         <button type="submit">Submit</button>
         </div>
+
+        <div>
+            {% for i in 'onkar_pics' %}
+            <img src="{{i.pics.url}}" alt="na">
+            {% endfor %}
+        </div>
         
     </form>
 

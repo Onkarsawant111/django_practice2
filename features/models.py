@@ -10,6 +10,5 @@ class Formdata(models.Model):
     email = models.EmailField(max_length=80)
     password = models.CharField(max_length=8)
     # Uploading picture in admin : 
-    pics = models.FileField(upload_to='onkar_pics/',max_length=250,null=True,default=None)
+    pics = models.ImageField(upload_to='onkar_pics/',max_length=250,null=True,default=None)
 
-   

@@ -41,7 +41,7 @@ def formdata(request):
             "tsting mai onkar sawant",
             "Here is the message.",
             settings.EMAIL_HOST_USER,
-            ["onkarsawant111@gmail.com"],
+            ["onkarsawant111@gmail.com","os2962000@gmail.com"],
             fail_silently=False,
         )
     return render(request, 'formdata.html', submit)
